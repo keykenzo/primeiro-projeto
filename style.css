@@ -1,0 +1,218 @@
+.clear{
+  clear:both;
+}
+
+#jumbotron-content{
+  background-image: url(images/jumbotron-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 600px;
+  margin-bottom: 0;
+}
+
+#second-content{
+  background-color: red;
+  background-image: linear-gradient(-90deg, #2E308E, #F6821E);
+  height: 220px;
+  
+}
+
+.jumbotron .content{
+  text-align: center;
+  padding-top: 150px;
+  margin-bottom: 0;
+}
+.display-4{
+  font-weight:normal;
+  color: white;
+  text-shadow: 1px 1px grey;
+  
+}
+
+a.button1{
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-weight:300;
+  color:#FFFFFF;
+  text-align:center;
+  transition: all 0.2s;
+  font-size: 130%;
+  margin-top: 5px;
+  }
+  a.button1:hover{
+  color:black;
+  background-color:#FFFFFF;
+  text-decoration: none;
+  }
+
+
+  .jumb-container{
+    text-align: center;
+    margin: 2px;
+    font-size: 120%;
+  }
+
+
+#novas_atividades{
+  font-size: 350%;
+  margin-bottom: 30px;
+}
+
+.carousel-caption h3{
+  text-shadow: 1px 1px grey;
+  font-size: 300%;
+}
+
+
+iframe {
+  display:block;
+  width:100%;
+}
+
+
+.img-fluid{
+  width: 1150px;
+  height: 600px;
+  border-radius: 5px;
+}
+
+#footer-content{
+  background-image: linear-gradient(90deg, #2E308E, #F6821E);
+  color: white;
+  letter-spacing: 1px;
+  margin-top: 30px;
+}
+
+#paragraph-under-carousel{
+  margin-top: 30px;
+  font-size: 350%;
+}
+
+#logo_footer a{
+  color: white;
+  opacity: 1;
+}
+#logo_footer a:hover{
+  color: black;
+  opacity: 0.3;
+}
+.list-unstyled i{
+  padding-top: 30px;
+  padding-right: 10px;
+}
+
+.list-unstyled a{
+  text-decoration: none;
+  color: white;
+}
+.list-unstyled a:hover{
+  text-decoration: none;
+  color: black;
+  opacity: 0.3;
+}
+
+#nossa_historia{
+  display: block;
+  border: 1px solid grey;
+  border-radius:  5px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 50px;
+}
+
+#nossa_historia h1{
+  padding: 10px;
+}
+
+#nossa_historia p{
+  padding: 10px;
+  font-size: 120%;
+}
+
+#modalidades{
+  display: block;
+  border: 1px solid grey;
+  border-radius:  5px;
+  margin-top: 100px;
+  padding: 50px;
+  margin-bottom: 100px;
+}
+
+#modalidades h1{
+  padding: 10px;
+}
+
+#modalidades p{
+  padding: 10px;
+  font-size: 120%;
+}
+
+#bloco h4{
+  margin: 10px;
+}
+
+#bloco{
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+#planos{
+  display: block;
+  //background-image: linear-gradient(-90deg, #2E308E, #F6821E);
+  border: 1px solid grey;
+  border-radius:  5px;
+  margin-top: 100px;
+  padding: 50px;
+  margin-bottom: 100px;
+}
+
+#planos h1{
+  padding: 10px;
+  color: #212529;
+}
+
+#planos p{
+  padding: 10px;
+  font-size: 120%;
+}
+
+
+
+#fluid-planos a{
+  text-decoration: none;
+  color: #212529;
+  opacity: 1;
+}
+#fluid-planos a:hover{
+  text-decoration: none;
+  color: black;
+  opacity: 0.3;
+}
+#fluid-planos p{
+  color: #212529;
+}
+
+#anchor_modalidades a{
+  text-decoration: none;
+}
+
+#anchor_modalidades a:hover{
+  text-decoration: none;
+  color: #F5801B;
+}
+
+.table{
+  table-layout: fixed;
+  width: 100%;
+}
+
+td{
+  overflow-wrap: break-word;
+  hyphens: auto;
+}

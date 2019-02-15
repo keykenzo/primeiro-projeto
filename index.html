@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    
+    <script src="main.js"></script>
+
+    <title>Academia Garra</title>
+
+    <style> 
+    
+    body{
+        font-family:'Oswald',serif;
+      }
+    
+    </style>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="logo_garra" width="225" height="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">INÍCIO <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tabs/academia.html">ACADEMIA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tabs/modalidades.html">MODALIDADES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tabs/planos.html">PLANOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tabs/horarios.html">HORÁRIOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tabs/contato.html">FALE CONOSCO</a>
+            </li>
+
+            <li class="nav-item ">
+              
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0" id="myForm" onsubmit="return myFunction()">
+            <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar.." id="myInput">
+            <button class="btn btn-outline-primary" type="submit">Procurar</button>
+          </form>
+        </div>
+      </nav>
+
+  <div class="clear"></div>
+
+      <div class="jumbotron jumbotron-fluid" id="jumbotron-content">
+        <div class="content">
+          <h1 class="display-4">PLANOS A PARTIR DE R$105,00/MÊS</h1>
+          <p class="lead">
+            <a href="./tabs/planos.html" class="button1">CONHEÇA NOSSOS PLANOS</a>
+          </p>
+        </div>
+        </div>
+
+  <div class="clear"></div>
+        
+      <div class="jumbotron jumbotron-fluid" id="second-content">
+          <div class="container col-md-12">
+            <div class="d-flex justify-content-around">
+              <div id="fluid-planos">
+                <a href="tabs/planos.html"><i class="fas fa-clipboard-list fa-5x"></i><p class="jumb-container">Planos</p></a>
+              </div>
+              <div id="fluid-planos">
+                  <a href="./tabs/modalidades.html"><i class="fas fa-dumbbell fa-5x"></i><p class="jumb-container">Aulas</p></a>
+              </div>
+              <div id="fluid-planos">
+                  <a href="./tabs/horarios.html"><i class="far fa-calendar-alt fa-5x"></i><p class="jumb-container">Horários</p></a>
+              </div>
+            </div>
+          </div>
+      </div>
+    
+    <div class="clear"></div>
+
+    <div id="novas_atividades" style="text-align: center" >
+      <h4>- EXPERIMENTE NOVAS ATIVIDADES -</h3>
+      <p >Oferecemos o melhor para você</p>
+      <hr>
+      <h2>Escolha uma modalidade</h2>
+    </div>
+
+    <div class="container">
+      <div class="carousel" id="slide" data-ride="carousel" data-interval="3000">
+        <ol class="carousel-indicators">
+          <li data-target="#slide" data-slide-to="0" class="active"></li>
+          <li data-target="#slide" data-slide-to="1"></li>
+          <li data-target="#slide" data-slide-to="2"></li>
+          <li data-target="#slide" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/pilates.jpg" class="img-fluid">
+            <div class="carousel-caption">
+              <h3>Pilates</h3>
+             </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/yoga.jpg" class="img-fluid">
+          <div class="carousel-caption">
+              <h3>Yoga</h3>
+             </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/boxing.jpg" class="img-fluid">
+          <div class="carousel-caption">
+              <h3>Boxe</h3>
+             </div></div>
+          <div class="carousel-item"><img src="images/spinning.jpg" class="img-fluid">
+          <div class="carousel-caption">
+              <h3>Spinning</h3>
+             </div></div>
+        </div>
+        <a href="#slide" class="carousel-control-prev" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+         <a href="#slide" class="carousel-control-next" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+
+    <div id="paragraph-under-carousel" style="text-align: center" >
+      <h4>Com uma academia projetada especialmente para você.</h4>
+      <p >Faça uma aula experimental</p>
+      
+    </div>
+
+    <div class="clear"></div>
+
+    
+
+    <!-- Footer -->
+<footer class="page-footer font-small stylish-color-dark pt-4" id="footer-content">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row d-flex justify-content-center">
+
+        <!-- Grid column -->
+        <div class="mx-auto">
+
+          <!-- Content -->
+          <h3 class="font-weight-bold text-uppercase mt-3 mb-4" id="footer_location">Localização</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.7871050597782!2d-48.50952858448896!3d-27.600129282836473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9527391b68debf1b%3A0x5af876a97b141743!2sGarra+Academia!5e0!3m2!1sen!2sbr!4v1547428244981" width="400" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+      
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="mx-auto">
+
+          <!-- Links -->
+          <h3 class="font-weight-bold text-uppercase mt-3 mb-4">Contato</h3>
+
+          <ul class="list-unstyled">
+            <li>
+                <a href="https://www.google.com/maps/dir/-27.6076787,-48.5037304/garraacademia/@-27.6037412,-48.5099059,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x9527391b68debf1b:0x5af876a97b141743!2m2!1d-48.5073399!2d-27.6001293" target="_blank"><i class="fas fa-map-marker-alt fa-lg"></i></i>Rua João Pio Duarte da Silva, 978 - Córrego Grande - Florianópolis</a>
+            </li>
+            <li>
+                <a href="tel:32343166"><i class="fas fa-phone fa-lg"></i></i>(048) 3234-3166</a>
+            </li>
+            <li>
+                <a href="mailto:garrafloripa@gmail.com"><i class="far fa-envelope fa-lg"></i>garrafloripa@gmail.com</a>
+            </li>
+            
+          </ul>
+
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <hr>
+
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center" >
+      <li class="list-inline-item" id="logo_footer">
+        <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/garraacademia/" target="_blank">
+          <i class="fab fa-facebook-f fa-2x"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item" id="logo_footer">
+        <a class="btn-floating btn-tw mx-1" href="https://www.instagram.com/garraacademia/" target="_blank">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+      </li>
+    </ul>
+
+    
+
+    <!-- Copyright -->
+    
+
+    <div class="footer-copyright text-center py-3">
+      © 2019 Todos os direitos reservados
+    </div>
+
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+
+  
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+</body>
+</html>
