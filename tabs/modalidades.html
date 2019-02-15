@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    
+    <script src="main_.js"></script>
+
+    <title>Academia Garra</title>
+
+    <style> 
+    
+    body{
+        font-family:'Oswald',serif;
+      }
+    
+    </style>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../images/logo.png" alt="logo_garra" width="225" height="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">INÍCIO <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="./academia.html">ACADEMIA</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="modalidades.html">MODALIDADES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./planos.html">PLANOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./horarios.html">HORÁRIOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contato.html">FALE CONOSCO</a>
+            </li>
+
+            <li class="nav-item ">
+              
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0" id="myForm" onsubmit="return myFunction()">
+            <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar.." id="myInput">
+            <button class="btn btn-outline-primary" type="submit">Procurar</button>
+          </form>
+        </div>
+      </nav>
+
+  <div class="clear"></div>
+
+  
+      
+
+      <div class="container mx-auto" id="modalidades" style="text-align: center">
+            <div class="mx-auto">
+              <h1>CONTAMOS COM AS MODALIDAES</h1>
+            </div>
+            <div class="mx-auto">
+              <p>Clique para saber mais:</p>
+            </div>
+          
+  
+            <div>
+                <div class="d-flex flex-wrap justify-content-center">
+                        <div id="anchor_modalidades" class="p-4  align-items-stretch" data-toggle="modal" data-target="#musculacao-modal"><a><img src="../images/musculacao_icon.png" alt="Musculacao"><p>Musculação</p></a></div>
+                        <div id="anchor_modalidades"  class="p-4  align-items-stretch" data-toggle="modal" data-target="#ginastica-modal"><a><img src="../images/gymnastics.png" alt="Ginastica"><p>Ginástica</p></a></div>
+                        <div id="anchor_modalidades"  class="p-4  align-items-stretch" data-toggle="modal" data-target="#pilates-modal"><a><img src="../images/pilates_icon.png" alt="pilates"><p>Pilates</p></a></div>
+                        <div id="anchor_modalidades"  class="p-4  align-items-stretch" data-toggle="modal" data-target="#yoga-modal"><a><img src="../images/yoga_icon.png" alt="Yoga"><p>Yoga</p></a></div>
+                        <div id="anchor_modalidades" class="p-4  align-items-stretch" data-toggle="modal" data-target="#muay-modal"><a><img src="../images/Muay_thai.png" alt="Muay_thai"><p>Muay Thai</p></a></div>
+                        <div id="anchor_modalidades"  class="p-4  align-items-stretch" data-toggle="modal" data-target="#jiu-modal"><a><img src="../images/jiu_jitsu.png" alt="jiu-jitsu"><p>Jiu Jitsu</p></a></div>
+                        <div id="anchor_modalidades"  class="p-4  align-items-stretch" data-toggle="modal" data-target="#boxe-modal"><a><img src="../images/boxing_icon.png" alt="boxe"><p>Boxe</p></a></div>
+                        <div id="anchor_modalidades" class="p-4  align-items-stretch" data-toggle="modal" data-target="#corrida-modal"><a><img src="../images/grupo_corrida_icon.png" alt="Grupo_corrida"><p>Grupo de Corrida</p></div>
+                </div>
+            </div>
+
+          
+          
+    </div>
+
+
+
+    <!-- Musculacao Modal -->
+    <div class="modal fade" id="musculacao-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalLongTitle">Musculação</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <p>Indicada para todos os públicos, a Musculação pode se tornar uma aliada na busca de vários objetivos:</p>
+                    <li>Emagrecimento</li>
+                    <li>Aumento de massa muscular</li>
+                    <li>Condicionamento físico</li>
+                    <li>Manutenção da composição corporal.</li></p>
+                    <p>Na Garra você sentirá segurança na busca de seus objetivos com o acompanhamento de professores capacitados e uma metodologia de trabalho que o auxiliarão na obtenção dos resultados desejados.</p>
+                    <img class="modal-content" src="../images/academia2.jpg" alt="musculacao-foto">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+        </div>
+
+    <!-- Ginastica Modal -->
+    <div class="modal fade" id="ginastica-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLongTitle">Ginástica</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                        <li>ABDOMINAL (15min) - Aula de trabalho localizado com séries variadas para a musculatura abdominal.</li>
+                        <li>BIKE (45min) - Aula de ciclismo indoor (com bicicleta estacionária) simulando percursos diferentes. Indicada para melhorar a capacidade aeróbica e resistência, além do aumento da força muscular do membros infeirores. Alto gasto calórico, média 800kcal por aula.</li>
+                        <li>ZUMBA (45min) - Aula de ritmos que incorpora vários estilos musicais: salsa, merengue, hip hop, funk, etc. Ideal para gastar calorias e tonificar o corpo.</li>
+                        <li>GARRA FUNCIONAL (60min)- Aula voltada para condicionamento físico e aeróbico com exercícios de força, agilidade e potência.</li>
+                        <li>GARRA SUSPENSION (45min) - Aula com a utilização de faixas suspensas fixadas no teto, onde  a resistência do exercício é o peso do corpo do praticante.</li>
+                        <li>POWER JUMP (60min)- Aula pre coreografada realizada em cima de um mini trampolim com alto gasto calórico.</li>
+                        <li>PILATES SOLO (45min) - Exercícios de fortalecimento e alongamentos, realizados no solo com acessórios (bola, bastão, elásticos, etc).</li>
+                        <li>STEP - Exercícios aeróbicos e continuos de baixo impacto que simulam o subir e descer de um degrau numa plataforma individual. Auxilia na queima de gordura corporal e tonificando os membros inferiores.</li>
+                        <li>SUPER 15 (15min) - Exercícios de fortalecimento para membros inferiores. Utiliza-se caneleiras.</li>
+                        </p><img class="modal-content"src="../images/ginastica.jpg" alt="ginastica">
+                    </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Pilates Modal -->
+    <div class="modal fade" id="pilates-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLongTitle">Pilates</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <p>O método Pilates reúne uma série de exercícios que promovem o fortalecimento muscular, reduzem desconfortos musculares e melhoram a flexibilidade e postura.</p>
+                    </p>A Garra  possui um estúdio climatizado com todos os aparelhos. As aulas têm duração de 60 minutos e são no máximo com 3 alunos, possibilitando  um atendimento personalizado.</p>
+                    </p>Para informações sobre disponibilidade de horários entre em contato por Telefone.</p>
+                    <img class="modal-content"src="../images/pilates-garra.jpg" alt="pilates">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Yoga Modal -->
+    <div class="modal fade" id="yoga-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLongTitle">Yoga</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <h5>Hatha Yoga</h5></p> 
+                    <li>Prática corporal com posturas de força e alongamento (40 min).</li>
+                    <li>Relaxamento, exercícios respiratórios e meditação (20 min).</li></p>
+                    <h5>Yogaterapia</h5></p>
+                    <li>O foco da aula é a redução dos estados de ansiedade, insônia, estresse e excesso de atividade mental.</li>
+                    <p> A prática corporal prioriza alongamentos com relaxamento e respiração abdominal longa. Não há posturas de força.</p>
+                    <img class="modal-content"src="../images/yoga-hara.jpg" alt="yoga-hara">
+                    <footer>Parceria com o Estúdio Hara, para maiores informações: www.yogaestudiohara.com</footer>
+             </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Muay Modal -->
+    <div class="modal fade" id="muay-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLongTitle">Muay Thai</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <p>Muay thai foi desenvolvido há mais de mil anos, sendo atualmente considerada uma das mais poderosas lutas de contato do mundo.  Além de praticar elaboradas técnicas de punhos e pernas, é encarada como uma das artes marciais que faz mais uso eficiente dos joelhos e cotovelos. O desporto desenvolve um ótimo condicionamento físico, concentração e auto confiança ao praticante.</p>
+                    <p>Terça e quinta-feira das 20:00 às 21:00.</p>
+                    <p>Faça uma aula experimental gratuita com:</p>
+                    <p style="font-weight: bold">Mestre Fernando Lageano</p>
+                    <p style="font-size: 90%">(Faixa Preta e Lutador de MMA)</p>
+                    
+                    
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Jiu Modal -->
+    <div class="modal fade" id="jiu-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Jiu Jitsu</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                         <p>Conhecido na sua forma ocidentalizada o Jiu-jitsu, é uma arte marcial japonesa (Budô) que utiliza tanto técnicas de golpes de alavancas, torções e pressões para derrubar e dominar um oponente. Sua origem, como sucede com quase todas as artes marciais vetustas, não pode ser apontada com total certeza, o que se sabe por certo é que seu principal ambiente de desenvolvimento e refino foi nas escolas de samurais, a casta guerreira do Japão. Contudo, outros levantam a hipótese de ter proveniência sínica, posto que sejam também notadas influências indianas.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Boxe Modal -->
+    <div class="modal fade" id="boxe-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Boxe</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <p>O boxe ou pugilismo é um esporte de combate, no qual os lutadores usam apenas os punhos, tanto para a defesa, quanto para o ataque. A palavra deriva do inglês box, ou pugilismo (bater com os punhos), expressão utilizada na Inglaterra entre 1000 e 1850.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Corrida Modal -->
+    <div class="modal fade" id="corrida-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Grupo de Corrida</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <p>O número de adeptos a corrida têm crescido muito nos últimos anos. Além de ser um esporte que oferece alto gasto calórico, a corrida proporciona uma sensação de prazer ao atleta devido a liberação do hormônio endorfina. Porém, se não praticada de maneira correta e na periodização adequada  pode acarratar em lesões e prejudicar o praticante.</p>
+                    <p>Garra proporciona um treinamento orientado com encontro 2 vezes por semana com o Professor Romulo. Além dos encontros, são encaminhadas planilhas de treino por email para o aluno realizar individualmente de acordo com os seus objetivos e respeitando seus limites.</p>
+                    <p>Terça e quinta às 19:00.</p>
+                    <footer>Faça uma aula experimental gratuita!</footer>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  
+                </div>
+              </div>
+            </div>
+        </div>
+    
+
+      
+
+    
+
+<!-- Footer -->
+<footer class="page-footer font-small stylish-color-dark pt-4" id="footer-content">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row d-flex justify-content-center">
+
+        <!-- Grid column -->
+        <div class="mx-auto">
+
+          <!-- Content -->
+          <h3 class="font-weight-bold text-uppercase mt-3 mb-4" id="footer_location">Localização</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.7871050597782!2d-48.50952858448896!3d-27.600129282836473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9527391b68debf1b%3A0x5af876a97b141743!2sGarra+Academia!5e0!3m2!1sen!2sbr!4v1547428244981" width="400" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+      
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="mx-auto">
+
+          <!-- Links -->
+          <h3 class="font-weight-bold text-uppercase mt-3 mb-4">Contato</h3>
+
+          <ul class="list-unstyled">
+            <li>
+                <a href="https://www.google.com/maps/dir/-27.6076787,-48.5037304/garraacademia/@-27.6037412,-48.5099059,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x9527391b68debf1b:0x5af876a97b141743!2m2!1d-48.5073399!2d-27.6001293" target="_blank"><i class="fas fa-map-marker-alt fa-lg"></i></i>Rua João Pio Duarte da Silva, 978 - Córrego Grande - Florianópolis</a>
+            </li>
+            <li>
+                <a href="tel:32343166"><i class="fas fa-phone fa-lg"></i></i>(048) 3234-3166</a>
+            </li>
+            <li>
+                <a href="mailto:garrafloripa@gmail.com"><i class="far fa-envelope fa-lg"></i>garrafloripa@gmail.com</a>
+            </li>
+            
+          </ul>
+
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <hr>
+
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center" >
+      <li class="list-inline-item" id="logo_footer">
+        <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/garraacademia/" target="_blank">
+          <i class="fab fa-facebook-f fa-2x"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item" id="logo_footer">
+        <a class="btn-floating btn-tw mx-1" href="https://www.instagram.com/garraacademia/" target="_blank">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+      </li>
+    </ul>
+
+    
+
+    <!-- Copyright -->
+    
+
+    <div class="footer-copyright text-center py-3">
+        © 2019 Todos os direitos reservados
+    </div>
+
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+  
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+</body>
+</html>
